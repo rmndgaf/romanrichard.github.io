@@ -8,99 +8,218 @@
 </head>
 <body>
 
-  <header class="hero">
-    <div class="container">
-      <h1>Engr. Roman Marcos Richard</h1>
-      <p class="subtitle">
-        Assistant Professor | Computer Engineering | AI and Data Science Researcher
-      </p>
-      <div class="links">
-        <a href="mailto:your-email@example.com">Email</a>
-        <a href="https://github.com/your-username" target="_blank">GitHub</a>
-        <a href="#" target="_blank">Google Scholar</a>
-        <a href="#" target="_blank">LinkedIn</a>
+  <main class="page-wrapper">
+
+    <!-- LEFT PROFILE AREA -->
+    <aside class="profile-panel">
+
+      <div class="avatar">
+        <!-- Replace with your actual photo if available -->
+        <img src="assets/profile.jpg" alt="Profile photo" />
       </div>
-    </div>
-  </header>
 
-  <main class="container">
-
-    <section>
-      <h2>About</h2>
-      <p>
-        I am an academic, researcher, and computer engineer focused on artificial
-        intelligence, data science, high-performance computing, emerging technologies,
-        and engineering education. My work emphasizes practical, ethical, and
-        sustainable applications of intelligent systems.
-      </p>
-    </section>
-
-    <section>
-      <h2>Research Interests</h2>
-      <div class="grid">
-        <div class="card">Artificial Intelligence</div>
-        <div class="card">Data Science</div>
-        <div class="card">Retrieval-Augmented Generation</div>
-        <div class="card">High-Performance Computing</div>
-        <div class="card">Edge AI</div>
-        <div class="card">Engineering Education</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Featured Projects</h2>
-
-      <div class="project">
-        <h3>Hardware-Optimized Retrieval-Augmented Generation</h3>
-        <p>
-          Research on efficient RAG pipelines using hybrid retrieval, quantization,
-          and optimization for resource-constrained environments.
+      <section class="intro-card">
+        <h1>Engr. Roman Marcos Richard</h1>
+        <p class="role">
+          Assistant Professor | Computer Engineering | AI & Data Science Researcher
         </p>
-      </div>
 
-      <div class="project">
-        <h3>AQUAPEELTER</h3>
         <p>
-          A smart and sustainable laundry wastewater filtration system integrating
-          Industry 4.0 technologies and banana peel-based filters.
+          I am an academic and computer engineer focused on artificial intelligence,
+          data science, high-performance computing, emerging technologies, and
+          engineering education.
         </p>
+
+        <div class="quick-links">
+          <a href="mailto:your-email@example.com">Email</a>
+          <a href="https://github.com/your-username" target="_blank">GitHub</a>
+          <a href="#" target="_blank">LinkedIn</a>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- RIGHT BROWSER-LIKE CONTENT AREA -->
+    <section class="browser-panel">
+
+      <div class="browser-window">
+
+        <!-- Browser top UI -->
+        <div class="browser-top">
+          <div class="browser-tabs">
+            <div class="browser-tab active-tab">
+              <span></span>
+              <button aria-label="Close tab">×</button>
+            </div>
+            <div class="browser-tab small-tab">
+              +
+            </div>
+          </div>
+
+          <div class="browser-toolbar">
+            <div class="browser-actions">
+              <span>‹</span>
+              <span>›</span>
+              <span>↻</span>
+            </div>
+
+            <div class="address-bar"></div>
+
+            <div class="window-actions">
+              <span>−</span>
+              <span>□</span>
+              <span>×</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden radio buttons for tab control -->
+        <input type="radio" name="tab" id="personal" checked />
+        <input type="radio" name="tab" id="experience" />
+        <input type="radio" name="tab" id="projects" />
+        <input type="radio" name="tab" id="research" />
+
+        <!-- Website content area -->
+        <div class="browser-content">
+
+          <nav class="tab-menu">
+            <label for="personal">Personal Details</label>
+            <label for="experience">Experience</label>
+            <label for="projects">Funded Projects</label>
+            <label for="research">Research</label>
+          </nav>
+
+          <div class="content-scroll">
+
+            <article class="tab-content personal-content">
+              <h2>Personal Details</h2>
+              <p>
+                I am a Computer Engineering academic with professional interests in
+                artificial intelligence, data science, intelligent systems, and
+                emerging technologies for education and industry.
+              </p>
+
+              <div class="info-grid">
+                <div>
+                  <h3>Current Role</h3>
+                  <p>Assistant Professor, Computer Engineering</p>
+                </div>
+
+                <div>
+                  <h3>Institution</h3>
+                  <p>Technological Institute of the Philippines – Quezon City</p>
+                </div>
+
+                <div>
+                  <h3>Academic Focus</h3>
+                  <p>AI, Data Science, HPC, Software Systems, and Engineering Education</p>
+                </div>
+
+                <div>
+                  <h3>Location</h3>
+                  <p>Quezon City, Philippines</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="tab-content experience-content">
+              <h2>Experience</h2>
+
+              <div class="timeline-item">
+                <h3>Assistant Professor</h3>
+                <p class="meta">Technological Institute of the Philippines – Quezon City</p>
+                <p>
+                  Handles Computer Engineering courses, research mentorship,
+                  curriculum development, and student innovation projects.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <h3>Academic Mentor</h3>
+                <p class="meta">Student Research and Innovation Projects</p>
+                <p>
+                  Mentors student teams in capstone design, software development,
+                  AI applications, data analytics, and engineering research.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <h3>Research and Technical Consultant</h3>
+                <p class="meta">AI, Data Analytics, and Emerging Technologies</p>
+                <p>
+                  Works on applied technology projects involving intelligent systems,
+                  automation, and data-driven decision support.
+                </p>
+              </div>
+            </article>
+
+            <article class="tab-content projects-content">
+              <h2>Funded Projects</h2>
+
+              <div class="project-card">
+                <h3>AQUAPEELTER</h3>
+                <p>
+                  A smart and sustainable laundry wastewater filtration system
+                  integrating Industry 4.0 technologies and banana peel-based filters.
+                </p>
+              </div>
+
+              <div class="project-card">
+                <h3>Q-RIEnTe / QISLaP-related Initiatives</h3>
+                <p>
+                  Research and development work connected to intelligent systems,
+                  quantum computing, forecasting, optimization, and power engineering.
+                </p>
+              </div>
+
+              <div class="project-card">
+                <h3>AI and Data Analytics Projects</h3>
+                <p>
+                  Applied AI and analytics initiatives for academic, industry, and
+                  institutional use cases.
+                </p>
+              </div>
+            </article>
+
+            <article class="tab-content research-content">
+              <h2>Research</h2>
+
+              <div class="research-list">
+                <div>
+                  <h3>Retrieval-Augmented Generation</h3>
+                  <p>
+                    Research on efficient RAG pipelines using hybrid retrieval,
+                    quantization, reranking, and hardware-aware optimization.
+                  </p>
+                </div>
+
+                <div>
+                  <h3>High-Performance Computing</h3>
+                  <p>
+                    Interest in parallel programming, GPU acceleration, and performance
+                    optimization for AI workloads.
+                  </p>
+                </div>
+
+                <div>
+                  <h3>AI for Engineering and Education</h3>
+                  <p>
+                    Development of AI-assisted workflows, intelligent learning tools,
+                    and practical AI applications for engineering contexts.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="project">
-        <h3>Agentic AI for MSMEs</h3>
-        <p>
-          Development of micro-credential learning materials for applying agentic
-          AI workflows in micro, small, and medium enterprises.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Teaching Areas</h2>
-      <ul>
-        <li>Computer Programming</li>
-        <li>Software Design</li>
-        <li>Data Structures and Algorithms</li>
-        <li>Database Systems</li>
-        <li>Data Analytics</li>
-        <li>Human-AI Interaction</li>
-        <li>Research Methods and Capstone Projects</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>
-        For academic collaborations, research projects, or professional inquiries,
-        feel free to reach out through email or GitHub.
-      </p>
     </section>
 
   </main>
-
-  <footer>
-    <p>© 2026 Engr. Roman Marcos Richard. Built with GitHub Pages.</p>
-  </footer>
 
 </body>
 </html>
