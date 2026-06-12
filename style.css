@@ -82,7 +82,6 @@ body {
   object-fit: cover;
   margin-bottom: 24px;
   background: var(--light);
-  filter: grayscale(100%);
 }
 
 .profile h1 {
