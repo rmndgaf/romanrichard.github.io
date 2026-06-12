@@ -9,56 +9,60 @@
 </head>
 <body>
 
-  <main class="page">
+  <main class="page-layout">
 
-    <!-- LEFT PROFILE SECTION -->
-    <aside class="profile">
-      <img src="profile.png" alt="Profile photo of Roman Marcos Richard" class="profile-img" />
+    <!-- LEFT SIDE -->
+    <aside class="left-column">
 
-      <section class="profile-card">
+      <div class="profile-image-wrapper">
+        <img src="profile.png" alt="Profile photo" class="profile-image" />
+      </div>
+
+      <section class="profile-box">
         <h1>Engr. Roman Marcos Richard</h1>
 
-        <p class="title">
+        <p class="headline">
           Assistant Professor · Computer Engineering · AI & Data Science Researcher
         </p>
 
-        <p class="bio">
+        <p>
           I am an academic, researcher, and computer engineer focused on artificial
           intelligence, data science, high-performance computing, emerging technologies,
           and engineering education.
         </p>
 
-        <div class="profile-links">
+        <div class="links">
           <a href="mailto:your-email@example.com">Email</a>
           <a href="https://github.com/your-username" target="_blank">GitHub</a>
           <a href="#" target="_blank">LinkedIn</a>
           <a href="#" target="_blank">Scholar</a>
         </div>
       </section>
+
     </aside>
 
-    <!-- RIGHT CONTENT SECTION -->
-    <section class="content-panel">
+    <!-- RIGHT SIDE -->
+    <section class="right-column">
 
-      <input type="radio" name="section" id="personal" checked />
-      <input type="radio" name="section" id="experience" />
-      <input type="radio" name="section" id="projects" />
-      <input type="radio" name="section" id="research" />
+      <div class="content-box">
 
-      <div class="content-card">
+        <input type="radio" name="tabs" id="personal" checked />
+        <input type="radio" name="tabs" id="experience" />
+        <input type="radio" name="tabs" id="projects" />
+        <input type="radio" name="tabs" id="research" />
 
-        <nav class="tabs">
+        <nav class="tab-nav">
           <label for="personal">Personal Details</label>
           <label for="experience">Experience</label>
           <label for="projects">Funded Projects</label>
           <label for="research">Research</label>
         </nav>
 
-        <div class="sections">
+        <div class="content-area">
 
           <!-- PERSONAL DETAILS -->
-          <article class="section personal-section">
-            <p class="eyebrow">Profile</p>
+          <article class="tab-content personal-content">
+            <p class="section-label">Profile</p>
             <h2>Personal Details</h2>
 
             <p>
@@ -67,23 +71,23 @@
               automation, and emerging technologies for education and industry.
             </p>
 
-            <div class="info-grid">
-              <div class="info-box">
+            <div class="detail-grid">
+              <div>
                 <span>Current Role</span>
                 <strong>Assistant Professor</strong>
               </div>
 
-              <div class="info-box">
+              <div>
                 <span>Institution</span>
                 <strong>T.I.P. Quezon City</strong>
               </div>
 
-              <div class="info-box">
+              <div>
                 <span>Field</span>
                 <strong>Computer Engineering</strong>
               </div>
 
-              <div class="info-box">
+              <div>
                 <span>Location</span>
                 <strong>Quezon City, Philippines</strong>
               </div>
@@ -91,11 +95,11 @@
           </article>
 
           <!-- EXPERIENCE -->
-          <article class="section experience-section">
-            <p class="eyebrow">Professional Work</p>
+          <article class="tab-content experience-content">
+            <p class="section-label">Professional Work</p>
             <h2>Experience</h2>
 
-            <div class="item">
+            <div class="entry">
               <h3>Assistant Professor</h3>
               <p class="meta">Technological Institute of the Philippines – Quezon City</p>
               <p>
@@ -104,7 +108,7 @@
               </p>
             </div>
 
-            <div class="item">
+            <div class="entry">
               <h3>Academic Mentor</h3>
               <p class="meta">Student Research, Capstone, and Innovation Projects</p>
               <p>
@@ -113,7 +117,7 @@
               </p>
             </div>
 
-            <div class="item">
+            <div class="entry">
               <h3>Research and Technical Consultant</h3>
               <p class="meta">AI, Analytics, and Emerging Technologies</p>
               <p>
@@ -124,11 +128,11 @@
           </article>
 
           <!-- FUNDED PROJECTS -->
-          <article class="section projects-section">
-            <p class="eyebrow">Projects</p>
+          <article class="tab-content projects-content">
+            <p class="section-label">Projects</p>
             <h2>Funded Projects</h2>
 
-            <div class="item">
+            <div class="entry">
               <h3>AQUAPEELTER</h3>
               <p>
                 A smart and sustainable laundry wastewater filtration system integrating
@@ -136,7 +140,7 @@
               </p>
             </div>
 
-            <div class="item">
+            <div class="entry">
               <h3>Q-RIEnTe / QISLaP-related Initiatives</h3>
               <p>
                 Research and development work connected to intelligent systems,
@@ -144,7 +148,7 @@
               </p>
             </div>
 
-            <div class="item">
+            <div class="entry">
               <h3>AI and Data Analytics Projects</h3>
               <p>
                 Applied AI and analytics initiatives for academic, industry, and
@@ -154,11 +158,11 @@
           </article>
 
           <!-- RESEARCH -->
-          <article class="section research-section">
-            <p class="eyebrow">Academic Work</p>
+          <article class="tab-content research-content">
+            <p class="section-label">Academic Work</p>
             <h2>Research</h2>
 
-            <div class="item">
+            <div class="entry">
               <h3>Retrieval-Augmented Generation</h3>
               <p>
                 Research on efficient RAG pipelines using hybrid retrieval, quantization,
@@ -166,7 +170,7 @@
               </p>
             </div>
 
-            <div class="item">
+            <div class="entry">
               <h3>High-Performance Computing</h3>
               <p>
                 Interest in parallel programming, GPU acceleration, and performance
@@ -174,7 +178,7 @@
               </p>
             </div>
 
-            <div class="item">
+            <div class="entry">
               <h3>AI for Engineering and Education</h3>
               <p>
                 Development of AI-assisted workflows, intelligent learning tools, and
@@ -184,7 +188,9 @@
           </article>
 
         </div>
+
       </div>
+
     </section>
 
   </main>
