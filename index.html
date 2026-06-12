@@ -4,193 +4,188 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Dr. Roman Marcos Richard</title>
+  <title>Roman Marcos Richard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main class="page-layout">
+  <main class="page">
 
-    <!-- LEFT SIDE -->
-    <aside class="left-column">
-
-      <div class="profile-image-wrapper">
-        <img src="assets/profile.png" alt="Profile photo" class="profile-image" />
+    <!-- LEFT PROFILE COLUMN -->
+    <aside class="sidebar">
+      <div class="photo-card">
+        <img src="assets/profile.png" alt="Profile photo of Roman Marcos Richard" />
       </div>
 
-      <section class="profile-box">
+      <section class="intro-card">
+        <p class="eyebrow">Computer Engineering · AI · Data Science</p>
+
         <h1>Engr. Roman Marcos Richard</h1>
 
-        <p class="headline">
-          Assistant Professor · Computer Engineering · AI & Data Science Researcher
+        <p class="subtitle">
+          Assistant Professor, researcher, and computer engineer focused on AI,
+          data science, high-performance computing, and emerging technologies.
         </p>
 
-        <p>
-          I am an academic, researcher, and computer engineer focused on artificial
-          intelligence, data science, high-performance computing, emerging technologies,
-          and engineering education.
-        </p>
-
-        <div class="links">
+        <div class="contact-links">
           <a href="mailto:your-email@example.com">Email</a>
           <a href="https://github.com/your-username" target="_blank">GitHub</a>
           <a href="#" target="_blank">LinkedIn</a>
           <a href="#" target="_blank">Scholar</a>
         </div>
       </section>
-
     </aside>
 
-    <!-- RIGHT SIDE -->
-    <section class="right-column">
+    <!-- RIGHT CONTENT COLUMN -->
+    <section class="main-panel">
 
-      <div class="content-box">
+      <nav class="section-nav">
+        <a href="#personal">Personal Details</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Funded Projects</a>
+        <a href="#research">Research</a>
+      </nav>
 
-        <input type="radio" name="tabs" id="personal" checked />
-        <input type="radio" name="tabs" id="experience" />
-        <input type="radio" name="tabs" id="projects" />
-        <input type="radio" name="tabs" id="research" />
+      <div class="content">
 
-        <nav class="tab-nav">
-          <label for="personal">Personal Details</label>
-          <label for="experience">Experience</label>
-          <label for="projects">Funded Projects</label>
-          <label for="research">Research</label>
-        </nav>
-
-        <div class="content-area">
-
-          <!-- PERSONAL DETAILS -->
-          <article class="tab-content personal-content">
-            <p class="section-label">Profile</p>
+        <section id="personal" class="content-section">
+          <div class="section-heading">
+            <span>01</span>
             <h2>Personal Details</h2>
+          </div>
 
-            <p>
-              I am a Computer Engineering academic with professional interests in
-              artificial intelligence, data science, software systems, intelligent
-              automation, and emerging technologies for education and industry.
-            </p>
+          <p class="lead">
+            I am a Computer Engineering academic with interests in artificial
+            intelligence, data science, software systems, intelligent automation,
+            and emerging technologies for education, research, and industry.
+          </p>
 
-            <div class="detail-grid">
-              <div>
-                <span>Current Role</span>
-                <strong>Assistant Professor</strong>
-              </div>
-
-              <div>
-                <span>Institution</span>
-                <strong>T.I.P. Quezon City</strong>
-              </div>
-
-              <div>
-                <span>Field</span>
-                <strong>Computer Engineering</strong>
-              </div>
-
-              <div>
-                <span>Location</span>
-                <strong>Quezon City, Philippines</strong>
-              </div>
+          <div class="details-grid">
+            <div class="detail-card">
+              <small>Current Role</small>
+              <strong>Assistant Professor</strong>
             </div>
-          </article>
 
-          <!-- EXPERIENCE -->
-          <article class="tab-content experience-content">
-            <p class="section-label">Professional Work</p>
+            <div class="detail-card">
+              <small>Institution</small>
+              <strong>T.I.P. Quezon City</strong>
+            </div>
+
+            <div class="detail-card">
+              <small>Field</small>
+              <strong>Computer Engineering</strong>
+            </div>
+
+            <div class="detail-card">
+              <small>Location</small>
+              <strong>Quezon City, Philippines</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience" class="content-section">
+          <div class="section-heading">
+            <span>02</span>
             <h2>Experience</h2>
+          </div>
 
-            <div class="entry">
+          <div class="timeline">
+            <article class="timeline-item">
               <h3>Assistant Professor</h3>
               <p class="meta">Technological Institute of the Philippines – Quezon City</p>
               <p>
-                Handles Computer Engineering courses, research mentorship, curriculum
-                development, and academic innovation initiatives.
+                Handles Computer Engineering courses, research mentorship,
+                curriculum development, and academic innovation initiatives.
               </p>
-            </div>
+            </article>
 
-            <div class="entry">
+            <article class="timeline-item">
               <h3>Academic Mentor</h3>
               <p class="meta">Student Research, Capstone, and Innovation Projects</p>
               <p>
                 Mentors students in design projects, software systems, AI applications,
                 data analytics, and engineering research.
               </p>
-            </div>
+            </article>
 
-            <div class="entry">
+            <article class="timeline-item">
               <h3>Research and Technical Consultant</h3>
               <p class="meta">AI, Analytics, and Emerging Technologies</p>
               <p>
                 Works on applied technology projects involving intelligent systems,
                 automation, and data-driven decision support.
               </p>
-            </div>
-          </article>
+            </article>
+          </div>
+        </section>
 
-          <!-- FUNDED PROJECTS -->
-          <article class="tab-content projects-content">
-            <p class="section-label">Projects</p>
+        <section id="projects" class="content-section">
+          <div class="section-heading">
+            <span>03</span>
             <h2>Funded Projects</h2>
+          </div>
 
-            <div class="entry">
+          <div class="project-list">
+            <article class="project-card">
               <h3>AQUAPEELTER</h3>
               <p>
-                A smart and sustainable laundry wastewater filtration system integrating
-                Industry 4.0 technologies and banana peel-based filters.
+                A smart and sustainable laundry wastewater filtration system
+                integrating Industry 4.0 technologies and banana peel-based filters.
               </p>
-            </div>
+            </article>
 
-            <div class="entry">
+            <article class="project-card">
               <h3>Q-RIEnTe / QISLaP-related Initiatives</h3>
               <p>
                 Research and development work connected to intelligent systems,
                 quantum computing, forecasting, optimization, and power engineering.
               </p>
-            </div>
+            </article>
 
-            <div class="entry">
+            <article class="project-card">
               <h3>AI and Data Analytics Projects</h3>
               <p>
                 Applied AI and analytics initiatives for academic, industry, and
                 institutional use cases.
               </p>
-            </div>
-          </article>
+            </article>
+          </div>
+        </section>
 
-          <!-- RESEARCH -->
-          <article class="tab-content research-content">
-            <p class="section-label">Academic Work</p>
+        <section id="research" class="content-section">
+          <div class="section-heading">
+            <span>04</span>
             <h2>Research</h2>
+          </div>
 
-            <div class="entry">
+          <div class="research-grid">
+            <article>
               <h3>Retrieval-Augmented Generation</h3>
               <p>
-                Research on efficient RAG pipelines using hybrid retrieval, quantization,
+                Efficient RAG pipelines using hybrid retrieval, quantization,
                 reranking, and hardware-aware optimization.
               </p>
-            </div>
+            </article>
 
-            <div class="entry">
+            <article>
               <h3>High-Performance Computing</h3>
               <p>
-                Interest in parallel programming, GPU acceleration, and performance
-                optimization for AI workloads.
+                Parallel programming, GPU acceleration, and performance optimization
+                for AI workloads.
               </p>
-            </div>
+            </article>
 
-            <div class="entry">
+            <article>
               <h3>AI for Engineering and Education</h3>
               <p>
-                Development of AI-assisted workflows, intelligent learning tools, and
-                practical AI applications for engineering contexts.
+                AI-assisted workflows, intelligent learning tools, and practical
+                applications for engineering contexts.
               </p>
-            </div>
-          </article>
-
-        </div>
+            </article>
+          </div>
+        </section>
 
       </div>
-
     </section>
 
   </main>
