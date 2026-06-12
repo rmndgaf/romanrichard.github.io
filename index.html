@@ -4,186 +4,306 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Roman Marcos Richard</title>
+  <title>Roman M. Richard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main class="page">
+  <main class="layout">
 
     <!-- LEFT PROFILE COLUMN -->
     <aside class="sidebar">
-      <div class="photo-card">
-        <img src="assets/profile.png" alt="Profile photo of Roman Marcos Richard" />
-      </div>
+      <img src="assets/profile.png" alt="Profile photo of Roman M. Richard" class="profile-photo" />
 
-      <section class="intro-card">
-        <p class="eyebrow">Computer Engineering · AI · Data Science</p>
+      <section class="profile-card">
+        <p class="tag">IEEE Senior Member · PCpE · Educator</p>
 
-        <h1>Engr. Roman Marcos Richard</h1>
+        <h1>Roman M. Richard</h1>
+        <p class="credentials">D.Eng., SMIEEE, PCpE</p>
 
-        <p class="subtitle">
-          Assistant Professor, researcher, and computer engineer focused on AI,
-          data science, high-performance computing, and emerging technologies.
+        <p class="summary">
+          Program Chair and Assistant Professor in Computer Engineering, focused on
+          AI, data science, high-performance computing, intelligent systems, and
+          engineering education.
         </p>
 
-        <div class="contact-links">
-          <a href="mailto:your-email@example.com">Email</a>
+        <div class="contact-list">
+          <a href="mailto:romanrichard@tip.edu.ph">romanrichard@tip.edu.ph</a>
+          <a href="mailto:richardromanmarcos@gmail.com">richardromanmarcos@gmail.com</a>
           <a href="https://github.com/your-username" target="_blank">GitHub</a>
           <a href="#" target="_blank">LinkedIn</a>
-          <a href="#" target="_blank">Scholar</a>
+          <a href="#" target="_blank">Google Scholar</a>
         </div>
       </section>
     </aside>
 
-    <!-- RIGHT CONTENT COLUMN -->
+    <!-- RIGHT CONTENT PANEL -->
     <section class="main-panel">
 
-      <nav class="section-nav">
-        <a href="#personal">Personal Details</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Funded Projects</a>
-        <a href="#research">Research</a>
+      <input type="radio" name="tab" id="personal" checked>
+      <input type="radio" name="tab" id="experience">
+      <input type="radio" name="tab" id="projects">
+      <input type="radio" name="tab" id="research">
+
+      <nav class="tabs">
+        <label for="personal">Personal Details</label>
+        <label for="experience">Experience</label>
+        <label for="projects">Funded Projects</label>
+        <label for="research">Research</label>
       </nav>
 
-      <div class="content">
+      <div class="sections">
 
-        <section id="personal" class="content-section">
-          <div class="section-heading">
-            <span>01</span>
+        <!-- PERSONAL DETAILS -->
+        <article class="tab-section personal">
+          <div class="section-header">
+            <p>Profile</p>
             <h2>Personal Details</h2>
           </div>
 
-          <p class="lead">
-            I am a Computer Engineering academic with interests in artificial
-            intelligence, data science, software systems, intelligent automation,
-            and emerging technologies for education, research, and industry.
-          </p>
+          <div class="compact-grid">
+            <div class="info-card">
+              <span>Current Role</span>
+              <strong>Program Chair of Computer Engineering</strong>
+              <small>Technological Institute of the Philippines – Quezon City</small>
+            </div>
 
-          <div class="details-grid">
-            <div class="detail-card">
-              <small>Current Role</small>
+            <div class="info-card">
+              <span>Academic Rank</span>
               <strong>Assistant Professor</strong>
+              <small>Computer Engineering Department and Graduate School</small>
             </div>
 
-            <div class="detail-card">
-              <small>Institution</small>
-              <strong>T.I.P. Quezon City</strong>
+            <div class="info-card">
+              <span>Professional Certification</span>
+              <strong>Professional Computer Engineer</strong>
+              <small>PCpE-00590</small>
             </div>
 
-            <div class="detail-card">
-              <small>Field</small>
-              <strong>Computer Engineering</strong>
-            </div>
-
-            <div class="detail-card">
-              <small>Location</small>
-              <strong>Quezon City, Philippines</strong>
+            <div class="info-card">
+              <span>IEEE Status</span>
+              <strong>IEEE Senior Member</strong>
+              <small>Recognized in 2026</small>
             </div>
           </div>
-        </section>
 
-        <section id="experience" class="content-section">
-          <div class="section-heading">
-            <span>02</span>
+          <h3>Education</h3>
+
+          <div class="mini-list">
+            <div>
+              <strong>Doctor of Engineering in Computer Engineering</strong>
+              <span>T.I.P. Quezon City · November 2025</span>
+            </div>
+            <div>
+              <strong>Master of Engineering in Computer Engineering</strong>
+              <span>Angeles University Foundation · February 2020</span>
+            </div>
+            <div>
+              <strong>Bachelor of Science in Computer Engineering</strong>
+              <span>Columban College Inc. · March 2015</span>
+            </div>
+          </div>
+
+          <h3>Core Areas</h3>
+
+          <div class="pill-group">
+            <span>Artificial Intelligence</span>
+            <span>Data Science</span>
+            <span>High-Performance Computing</span>
+            <span>Machine Learning</span>
+            <span>Computer Engineering</span>
+            <span>Engineering Education</span>
+            <span>Cyber-Physical Systems</span>
+            <span>Software Systems</span>
+          </div>
+        </article>
+
+        <!-- EXPERIENCE -->
+        <article class="tab-section experience">
+          <div class="section-header">
+            <p>Academic and Professional Work</p>
             <h2>Experience</h2>
           </div>
 
           <div class="timeline">
-            <article class="timeline-item">
-              <h3>Assistant Professor</h3>
-              <p class="meta">Technological Institute of the Philippines – Quezon City</p>
+            <section>
+              <h3>Program Chair of Computer Engineering</h3>
+              <p class="meta">T.I.P. Quezon City · June 2025 – Present</p>
               <p>
-                Handles Computer Engineering courses, research mentorship,
-                curriculum development, and academic innovation initiatives.
+                Leads the BS Computer Engineering program through strategic academic
+                planning, accreditation alignment, curriculum innovation, faculty
+                coordination, and industry-linked student development.
               </p>
-            </article>
+            </section>
 
-            <article class="timeline-item">
-              <h3>Academic Mentor</h3>
-              <p class="meta">Student Research, Capstone, and Innovation Projects</p>
+            <section>
+              <h3>Full-time Faculty / Assistant Professor</h3>
+              <p class="meta">T.I.P. Quezon City · August 2021 – Present</p>
               <p>
-                Mentors students in design projects, software systems, AI applications,
-                data analytics, and engineering research.
+                Teaches programming, operating systems, database management systems,
+                data science electives, and design project courses.
               </p>
-            </article>
+            </section>
 
-            <article class="timeline-item">
-              <h3>Research and Technical Consultant</h3>
-              <p class="meta">AI, Analytics, and Emerging Technologies</p>
+            <section>
+              <h3>Guest Lecturer in Data Science and Web Technologies</h3>
+              <p class="meta">MDIS Tashkent · April 2024 – April 2025</p>
               <p>
-                Works on applied technology projects involving intelligent systems,
-                automation, and data-driven decision support.
+                Delivered remote lectures and instructional materials in data science
+                and web technologies.
               </p>
-            </article>
+            </section>
+
+            <section>
+              <h3>Guest Lecturer for Data Analytics and Business Intelligence</h3>
+              <p class="meta">INTI International College, Malaysia · October 2023</p>
+              <p>
+                Delivered invited lectures on data analytics, visualization, and
+                business intelligence.
+              </p>
+            </section>
+
+            <section>
+              <h3>Program Chairperson, BS Computer Engineering</h3>
+              <p class="meta">Columban College Inc. · June 2018 – June 2021</p>
+              <p>
+                Supported academic planning, curriculum development, instructional
+                supervision, and academe-industry linkages.
+              </p>
+            </section>
+
+            <section>
+              <h3>Full-time Faculty / Associate Professor</h3>
+              <p class="meta">Columban College Inc. · June 2015 – June 2021</p>
+              <p>
+                Taught computer programming, computer architecture, microprocessor
+                systems, and engineering laboratory courses.
+              </p>
+            </section>
           </div>
-        </section>
+        </article>
 
-        <section id="projects" class="content-section">
-          <div class="section-heading">
-            <span>03</span>
+        <!-- FUNDED PROJECTS -->
+        <article class="tab-section projects">
+          <div class="section-header">
+            <p>Research, Industry, and Applied Projects</p>
             <h2>Funded Projects</h2>
           </div>
 
-          <div class="project-list">
-            <article class="project-card">
+          <div class="project-grid">
+            <section>
               <h3>AQUAPEELTER</h3>
+              <p class="meta">Project Leader · DOST-PCIEERD Young Innovators Program · September 2025 – Present</p>
               <p>
-                A smart and sustainable laundry wastewater filtration system
-                integrating Industry 4.0 technologies and banana peel-based filters.
+                A smart and sustainable laundry wastewater filtration system integrating
+                Industry 4.0 technologies and banana peel-based filters.
               </p>
-            </article>
+            </section>
 
-            <article class="project-card">
-              <h3>Q-RIEnTe / QISLaP-related Initiatives</h3>
+            <section>
+              <h3>Q-RIEnTe Project</h3>
+              <p class="meta">Project Staff L2 · DOST-PCIEERD · September 2024 – Present</p>
               <p>
-                Research and development work connected to intelligent systems,
-                quantum computing, forecasting, optimization, and power engineering.
+                Quantum Research for Industrial Energy Technology project involving
+                forecasting, optimization, intelligent systems, and power engineering.
               </p>
-            </article>
+            </section>
 
-            <article class="project-card">
-              <h3>AI and Data Analytics Projects</h3>
+            <section>
+              <h3>Generative AI Assistance</h3>
+              <p class="meta">Computer Engineering Specialist · TechnoCoRe Program · August 2024 – Present</p>
               <p>
-                Applied AI and analytics initiatives for academic, industry, and
-                institutional use cases.
+                Workflow automation and language modeling project focused on applied
+                generative AI assistance.
               </p>
-            </article>
+            </section>
+
+            <section>
+              <h3>Philippine Batteries, Inc.</h3>
+              <p class="meta">Primary Consultant / Project Team Leader · February 2023 – July 2023</p>
+              <p>
+                Led technical consulting work involving AI, data analytics, and
+                process-oriented technology solutions.
+              </p>
+            </section>
+
+            <section>
+              <h3>Chateau Rouge, Inc.</h3>
+              <p class="meta">Software Engineering Consultant · September 2020 – August 2021</p>
+              <p>
+                Provided consultancy for proposed software solutions and improvements
+                to business processes and practices.
+              </p>
+            </section>
           </div>
-        </section>
+        </article>
 
-        <section id="research" class="content-section">
-          <div class="section-heading">
-            <span>04</span>
+        <!-- RESEARCH -->
+        <article class="tab-section research">
+          <div class="section-header">
+            <p>Publications, Awards, and Development</p>
             <h2>Research</h2>
           </div>
 
-          <div class="research-grid">
-            <article>
-              <h3>Retrieval-Augmented Generation</h3>
-              <p>
-                Efficient RAG pipelines using hybrid retrieval, quantization,
-                reranking, and hardware-aware optimization.
-              </p>
-            </article>
+          <h3>Selected Publications</h3>
 
-            <article>
-              <h3>High-Performance Computing</h3>
-              <p>
-                Parallel programming, GPU acceleration, and performance optimization
-                for AI workloads.
-              </p>
-            </article>
+          <div class="publication-list">
+            <section>
+              <strong>SLM-based hybrid retrieval for Resource Constrained Retrieval-Augmented Generation on Open Super-Large crawled data</strong>
+              <span>ICSP 2025 · DOI: 10.1109/icsp65755.2025.11086925</span>
+            </section>
 
-            <article>
-              <h3>AI for Engineering and Education</h3>
-              <p>
-                AI-assisted workflows, intelligent learning tools, and practical
-                applications for engineering contexts.
-              </p>
-            </article>
+            <section>
+              <strong>Comparative analysis of Hybrid Quantum-Classical and Artificial neural network for Sustainable Cyber-Physical Power System anomaly Detection</strong>
+              <span>Materials Research Proceedings, 66, 307–314 · DOI: 10.21741/9781644904152-28</span>
+            </section>
+
+            <section>
+              <strong>Cyber-Physical System Framework for cerebrovascular accidents using Machine learning algorithm</strong>
+              <span>ICISS 2022 · DOI: 10.1109/iciss55894.2022.9915228</span>
+            </section>
           </div>
-        </section>
+
+          <h3>Selected Honors and Awards</h3>
+
+          <div class="two-column-list">
+            <div>
+              <strong>IEEE Senior Member</strong>
+              <span>IEEE · 2026</span>
+            </div>
+            <div>
+              <strong>National Finalists</strong>
+              <span>ASEAN Data Science Explorers · 2025</span>
+            </div>
+            <div>
+              <strong>6 National Finalist Teams</strong>
+              <span>ASEAN Data Science Explorers · 2024</span>
+            </div>
+            <div>
+              <strong>Champion Coach, Python Programming</strong>
+              <span>ICpEP NCR · 2023</span>
+            </div>
+            <div>
+              <strong>2nd Runner Up Coach</strong>
+              <span>Microsoft Imagine Cup Philippines · 2023</span>
+            </div>
+            <div>
+              <strong>Outstanding Faculty Award</strong>
+              <span>Columban College Inc. · 2020</span>
+            </div>
+          </div>
+
+          <h3>Selected Professional Development</h3>
+
+          <div class="pill-group">
+            <span>ACM ASEAN School on HPC & AI</span>
+            <span>ICTP School on Parallel Programming and HPC</span>
+            <span>ASEAN HPC School 2023</span>
+            <span>Training of Trainers on Data Science and Analytics</span>
+            <span>Machine Learning on Low-Power Devices</span>
+            <span>International Workshop on Data Science</span>
+          </div>
+        </article>
 
       </div>
     </section>
